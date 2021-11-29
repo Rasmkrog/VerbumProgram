@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Conjugation_of_Verbs"
         mc:Ignorable="d"
+
         Title="MainWindow" Height="800" Width="600">
-    <Grid>
+    <Grid UseLayoutRounding="True">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="50" />
-            <ColumnDefinition Width="21*" />
+            <ColumnDefinition Width="205" />
             <ColumnDefinition Width="90" />
-            <ColumnDefinition Width="21*" />
+            <ColumnDefinition Width="205" />
             <ColumnDefinition Width="50" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -27,9 +28,12 @@
             <RowDefinition Height="1*" />
 
         </Grid.RowDefinitions>
+
         <Label Content="Conjugation of Verbs" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Margin="2,2,2,2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="40" Background="LightBlue"/>
         <TextBox Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3" Margin="2,2,2,2" Text="TextBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25" Background="LightGray"/>
+        <Label Content="Conjugation" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3" Margin="5,5,5,5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="40" Background="LightBlue" />
 
+        <Button x:Name="Button1" Grid.Row="4" Grid.Column="1" Content=""></Button>
 
     </Grid>
 </Window>
