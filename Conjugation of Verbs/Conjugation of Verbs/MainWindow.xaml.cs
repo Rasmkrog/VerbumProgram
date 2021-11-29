@@ -20,9 +20,43 @@ namespace Conjugation_of_Verbs
     /// </summary>
     public partial class MainWindow : Window
     {
+        string input;
+        string output;
+        Program program = new Program();
+
         public MainWindow()
         {
             InitializeComponent();
+
+        }
+        
+        private void Button1_Click(object sender, RoutedEventArgs e)
+        {
+            input = Inputbox.Text;
+            output = program.Verb(input);
+
+            Outputbox.Text = output;
+
+        }
+        private void Button2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Button3_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Button4_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Button5_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Button6_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

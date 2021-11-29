@@ -1,0 +1,22 @@
+C:\Users\rasmk\Desktop\Programmeringsfiler\VerbumProgram\Conjugation of Verbs\Conjugation of Verbs\bin\Debug\net5.0-windows\Conjugation of Verbs.exe
+C:\Users\rasmk\Desktop\Programmeringsfiler\VerbumProgram\Conjugation of Verbs\Conjugation of Verbs\bin\Debug\net5.0-windows\Conjugation of Verbs.deps.json
+C:\Users\rasmk\Desktop\Programmeringsfiler\VerbumProgram\Conjugation of Verbs\Conjugation of Verbs\bin\Debug\net5.0-windows\Conjugation of Verbs.runtimeconfig.json
+C:\Users\rasmk\Desktop\Programmeringsfiler\VerbumProgram\Conjugation of Verbs\Conjugation of Verbs\bin\Debug\net5.0-windows\Conjugation of Verbs.runtimeconfig.dev.json
+C:\Users\rasmk\Desktop\Programmeringsfiler\VerbumProgram\Conjugation of Verbs\Conjugation of Verbs\bin\Debug\net5.0-windows\Conjugation of Verbs.dll
+C:\Users\rasmk\Desktop\Programmeringsfiler\VerbumProgram\Conjugation of Verbs\Conjugation of Verbs\bin\Debug\net5.0-windows\ref\Conjugation of Verbs.dll
+C:\Users\rasmk\Desktop\Programmeringsfiler\VerbumProgram\Conjugation of Verbs\Conjugation of Verbs\bin\Debug\net5.0-windows\Conjugation of Verbs.pdb
+C:\Users\rasmk\Desktop\Programmeringsfiler\VerbumProgram\Conjugation of Verbs\Conjugation of Verbs\obj\Debug\net5.0-windows\Conjugation of Verbs.csproj.AssemblyReference.cache
+C:\Users\rasmk\Desktop\Programmeringsfiler\VerbumProgram\Conjugation of Verbs\Conjugation of Verbs\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\rasmk\Desktop\Programmeringsfiler\VerbumProgram\Conjugation of Verbs\Conjugation of Verbs\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\rasmk\Desktop\Programmeringsfiler\VerbumProgram\Conjugation of Verbs\Conjugation of Verbs\obj\Debug\net5.0-windows\Conjugation of Verbs_MarkupCompile.cache
+C:\Users\rasmk\Desktop\Programmeringsfiler\VerbumProgram\Conjugation of Verbs\Conjugation of Verbs\obj\Debug\net5.0-windows\Conjugation of Verbs_MarkupCompile.lref
+C:\Users\rasmk\Desktop\Programmeringsfiler\VerbumProgram\Conjugation of Verbs\Conjugation of Verbs\obj\Debug\net5.0-windows\MainWindow.baml
+C:\Users\rasmk\Desktop\Programmeringsfiler\VerbumProgram\Conjugation of Verbs\Conjugation of Verbs\obj\Debug\net5.0-windows\Conjugation of Verbs.g.resources
+C:\Users\rasmk\Desktop\Programmeringsfiler\VerbumProgram\Conjugation of Verbs\Conjugation of Verbs\obj\Debug\net5.0-windows\Conjugation of Verbs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rasmk\Desktop\Programmeringsfiler\VerbumProgram\Conjugation of Verbs\Conjugation of Verbs\obj\Debug\net5.0-windows\Conjugation of Verbs.AssemblyInfoInputs.cache
+C:\Users\rasmk\Desktop\Programmeringsfiler\VerbumProgram\Conjugation of Verbs\Conjugation of Verbs\obj\Debug\net5.0-windows\Conjugation of Verbs.AssemblyInfo.cs
+C:\Users\rasmk\Desktop\Programmeringsfiler\VerbumProgram\Conjugation of Verbs\Conjugation of Verbs\obj\Debug\net5.0-windows\Conjugation of Verbs.csproj.CoreCompileInputs.cache
+C:\Users\rasmk\Desktop\Programmeringsfiler\VerbumProgram\Conjugation of Verbs\Conjugation of Verbs\obj\Debug\net5.0-windows\Conjugation of Verbs.dll
+C:\Users\rasmk\Desktop\Programmeringsfiler\VerbumProgram\Conjugation of Verbs\Conjugation of Verbs\obj\Debug\net5.0-windows\ref\Conjugation of Verbs.dll
+C:\Users\rasmk\Desktop\Programmeringsfiler\VerbumProgram\Conjugation of Verbs\Conjugation of Verbs\obj\Debug\net5.0-windows\Conjugation of Verbs.pdb
+C:\Users\rasmk\Desktop\Programmeringsfiler\VerbumProgram\Conjugation of Verbs\Conjugation of Verbs\obj\Debug\net5.0-windows\Conjugation of Verbs.genruntimeconfig.cache
