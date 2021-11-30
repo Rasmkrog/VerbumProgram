@@ -22,6 +22,8 @@ namespace Conjugation_of_Verbs
     {
         string input;
         string output;
+        string mode;
+
         Program program = new Program();
 
         public MainWindow()
@@ -32,8 +34,9 @@ namespace Conjugation_of_Verbs
         
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
+            mode = "I";
             input = Inputbox.Text;
-            output = program.Verb(input);
+            output = program.Verb(input, mode);
 
             Outputbox.Text = output;
 
