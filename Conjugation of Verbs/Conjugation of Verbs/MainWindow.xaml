@@ -31,14 +31,16 @@
 
         <Label Content="Conjugation of Verbs" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Margin="2,2,2,2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="40" FontFamily="Times New Roman" Background="LightBlue"/>
         <TextBox x:Name="Inputbox" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3" Margin="2,2,2,2" Text="TextBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25" FontFamily="Times New Roman" Background="LightGray"/>
-        <Label Content="Conjugation" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3" Margin="5,5,5,5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="40" FontFamily="Times New Roman" Background="LightBlue" />
+        <Label Content="Singular" Grid.Column="1" Grid.Row="3"  Margin="5,5,5,5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="40" FontFamily="Times New Roman" Background="LightBlue" />
+        <Label Content="Plural" Grid.Column="3" Grid.Row="3" Margin="5,5,5,5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="40" FontFamily="Times New Roman" Background="LightBlue" />
 
-        <Button x:Name="Button1" Grid.Row="4" Grid.Column="1" Content="I" FontSize="50" FontFamily="Times New Roman" Margin="5,5,5,5" Click="Button1_Click"></Button>
-        <Button x:Name="Button2" Grid.Row="5" Grid.Column="1" Content="I" FontSize="50" FontFamily="Times New Roman" Margin="5,5,5,5" Click="Button2_Click"></Button>
-        <Button x:Name="Button3" Grid.Row="6" Grid.Column="1" Content="I" FontSize="50" FontFamily="Times New Roman" Margin="5,5,5,5" Click="Button3_Click"></Button>
-        <Button x:Name="Button4" Grid.Row="4" Grid.Column="3" Content="I" FontSize="50" FontFamily="Times New Roman" Margin="5,5,5,5" Click="Button4_Click"></Button>
-        <Button x:Name="Button5" Grid.Row="5" Grid.Column="3" Content="I" FontSize="50" FontFamily="Times New Roman" Margin="5,5,5,5" Click="Button5_Click"></Button>
-        <Button x:Name="Button6" Grid.Row="6" Grid.Column="3" Content="I" FontSize="50" FontFamily="Times New Roman" Margin="5,5,5,5" Click="Button6_Click"></Button>
+
+        <Button x:Name="Button1" Grid.Row="4" Grid.Column="1" Content="I" FontSize="35" FontFamily="Times New Roman" Margin="5,5,5,5" Click="Button1_Click"></Button>
+        <Button x:Name="Button2" Grid.Row="5" Grid.Column="1" Content="You" FontSize="35" FontFamily="Times New Roman" Margin="5,5,5,5" Click="Button2_Click"></Button>
+        <Button x:Name="Button3" Grid.Row="6" Grid.Column="1" Content="He/She/It" FontSize="35" FontFamily="Times New Roman" Margin="5,5,5,5" Click="Button3_Click"></Button>
+        <Button x:Name="Button4" Grid.Row="4" Grid.Column="3" Content="We" FontSize="35" FontFamily="Times New Roman" Margin="5,5,5,5" Click="Button4_Click"></Button>
+        <Button x:Name="Button5" Grid.Row="5" Grid.Column="3" Content="You" FontSize="35" FontFamily="Times New Roman" Margin="5,5,5,5" Click="Button5_Click"></Button>
+        <Button x:Name="Button6" Grid.Row="6" Grid.Column="3" Content="They" FontSize="35" FontFamily="Times New Roman" Margin="5,5,5,5" Click="Button6_Click"></Button>
 
         <Label Content="Inflected verb" Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="3" Margin="5,5,5,5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="40" FontFamily="Times New Roman" Background="LightBlue" />
         <TextBox x:Name="Outputbox" Grid.Column="1" Grid.Row="8" Grid.ColumnSpan="3" Margin="20,20,20,20" Text="TextBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25" FontFamily="Times New Roman" Background="LightGray" IsEnabled="False"/>
