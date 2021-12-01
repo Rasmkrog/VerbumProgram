@@ -8,6 +8,8 @@ namespace Conjugation_of_Verbs
 {
     class Irregular_verbs
     {
+        
+        
         //skal slå op i en fil og tjekke om ordet eksistere
     }
 }

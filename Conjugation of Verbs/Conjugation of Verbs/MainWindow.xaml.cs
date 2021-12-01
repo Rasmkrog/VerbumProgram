@@ -29,7 +29,6 @@ namespace Conjugation_of_Verbs
         public MainWindow()
         {
             InitializeComponent();
-
         }
         
         private void Button1_Click(object sender, RoutedEventArgs e)
@@ -43,23 +42,43 @@ namespace Conjugation_of_Verbs
         }
         private void Button2_Click(object sender, RoutedEventArgs e)
         {
+            mode = "You";
+            input = Inputbox.Text;
+            output = program.Verb(input, mode);
 
+            Outputbox.Text = output;
         }
         private void Button3_Click(object sender, RoutedEventArgs e)
         {
+            mode = "He/She/It";
+            input = Inputbox.Text;
+            output = program.Verb(input, mode);
 
+            Outputbox.Text = output;
         }
         private void Button4_Click(object sender, RoutedEventArgs e)
         {
+            mode = "We";
+            input = Inputbox.Text;
+            output = program.Verb(input, mode);
 
+            Outputbox.Text = output;
         }
         private void Button5_Click(object sender, RoutedEventArgs e)
         {
+            mode = "You";
+            input = Inputbox.Text;
+            output = program.Verb(input, mode);
 
+            Outputbox.Text = output;
         }
         private void Button6_Click(object sender, RoutedEventArgs e)
         {
+            mode = "They";
+            input = Inputbox.Text;
+            output = program.Verb(input, mode);
 
+            Outputbox.Text = output;
         }
     }
 }

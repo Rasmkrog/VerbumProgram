@@ -8,17 +8,22 @@ namespace Conjugation_of_Verbs
 {
     class Program
     {
-        private string Input;
-        private string Mode;
         //Main program
+
+
+        //skal vi implementere present og dativ?
+        //tænker godt det er muligt at få dativ med.
+        
+        private string OutputVerb;
+        Regular_verbs Regular = new Regular_verbs();
+        
         public string Verb(string input, string mode)
         {
+            
 
-            this.Input = input;
-            this.Mode = mode;
+            OutputVerb = Regular.isRegular(input, mode);
 
-
-            return $"{input}";
+            return $"{OutputVerb}";
 
         }
     }
