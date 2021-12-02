@@ -20,9 +20,9 @@ namespace Conjugation_of_Verbs
     /// </summary>
     public partial class MainWindow : Window
     {
-        string input;
-        string output;
-        string mode;
+        private string input;
+        private string output;
+        private string mode;
 
         Program program = new Program();
 

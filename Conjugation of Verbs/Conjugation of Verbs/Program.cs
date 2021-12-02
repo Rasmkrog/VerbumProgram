@@ -15,13 +15,13 @@ namespace Conjugation_of_Verbs
         //tænker godt det er muligt at få dativ med.
         
         private string OutputVerb;
+        private int time = 0;
         Regular_verbs Regular = new Regular_verbs();
         
         public string Verb(string input, string mode)
         {
             
-
-            OutputVerb = Regular.isRegular(input, mode);
+            OutputVerb = Regular.isRegular(input, mode, time);
 
             return $"{OutputVerb}";
 

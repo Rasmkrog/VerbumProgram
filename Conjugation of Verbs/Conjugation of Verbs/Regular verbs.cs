@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,39 +13,62 @@ namespace Conjugation_of_Verbs
         //kan indtil vidre bøje i present/infinitiv form.
         //Skal den også kunne bøje i dativ?
 
-        string Input;
-        string Mode; 
+        private string Input;
+        private string Mode; 
         private string Verb;
-        public string isRegular(string input, string mode)
+        private int Time;
+        private string txt = "";
+        public string isRegular(string input, string mode, int time)
         {
+            //using StreamReader
             this.Mode = mode;
             this.Input = input;
-            switch (Mode)
+            this.Time = time;
+
+            //if time == present (dativ)  - converter til dativ - ellers bøj som infinitiv verbum
+
+            String path = @"RegularVerbs.txt";
+            using (StreamReader sr = new StreamReader(path, System.Text.Encoding.GetEncoding("iso-8859-1")))
             {
-                case "I":
+                while (sr.ReadLine() != null)
                 {
-                    Verb = $"{input}";
-                    break;
-                }
-                case "You":
-                {
-                    Verb = $"{input}";
-                    break;
-                }
-                case "He/She/It":
-                {
-                    Verb = $"{input}s";
-                    break;
-                }
-                case "We":
-                {
-                    Verb = $"{input}";
-                    break;
-                }
-                case "They":
-                {
-                    Verb = $"{input}";
-                    break;
+                    txt = sr.ReadLine();
+                    if (Verb == txt)
+                    {
+                        switch (Mode)
+                        {
+                            case "I":
+                            {
+                                Verb = $"{input}";
+                                break;
+                            }
+                            case "You":
+                            {
+                                Verb = $"{input}";
+                                break;
+                            }
+                            case "He/She/It":
+                            {
+                                Verb = $"{input}s";
+                                break;
+                            }
+                            case "We":
+                            {
+                                Verb = $"{input}";
+                                break;
+                            }
+                            case "They":
+                            {
+                                Verb = $"{input}";
+                                break;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        txt = "";
+                        Verb = "Incorrect Verb";
+                    }
                 }
             }
             return Verb;
