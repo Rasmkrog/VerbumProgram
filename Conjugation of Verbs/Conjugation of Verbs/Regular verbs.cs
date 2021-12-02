@@ -17,7 +17,8 @@ namespace Conjugation_of_Verbs
         private string Mode;
         private string Verb;
         private int Time;
-        private string txt = "";
+        private string txt;
+        private string[] VerbsArry;
 
         public string isRegular(string input, string mode, int time)
         {
@@ -27,60 +28,74 @@ namespace Conjugation_of_Verbs
 
             //if time == present (dativ)  - converter til dativ - ellers bøj som infinitiv verbum
 
-            String path = @"RegularVerbs.txt";
+            String path1 = @"RegularVerbsInfinitiv.txt"; //infinitiv form
+            String path2 = @"RegularVerbsDativ.txt"; //Dativ form
 
-            /*using (StreamWriter sw =
-                new StreamWriter(path, append: true, System.Text.Encoding.GetEncoding("iso-8859-1")))
-                {
-                sw.WriteLine("Hej");
-                }*/
-            
-            for (int i = 0; i <= 50; i++)
+
+            if (Time == 1)
             {
-                using (StreamReader sr = new StreamReader(path, System.Text.Encoding.GetEncoding("iso-8859-1")))
+                using (StreamReader sr = new StreamReader(path2, System.Text.Encoding.GetEncoding("iso-8859-1")))
                 {
                     txt = sr.ReadLine();
-                    
-                    if (Verb == txt)
+                    VerbsArry = txt.Split(',');
+                }
+            }
+            else
+            {
+                using (StreamReader sr = new StreamReader(path1, System.Text.Encoding.GetEncoding("iso-8859-1")))
+                {
+                    txt = sr.ReadLine();
+                    VerbsArry = txt.Split(',');
+                }
+            }
+            
+            for (int i = 0; i < VerbsArry.Length; i++)
+            {
+                if (Input == VerbsArry[i])
+                {
+                    switch (Mode)
                     {
-                        switch (Mode)
-                        {
-                            case "I":
+                        case "I":
                             {
                                 Verb = $"{Input}";
                                 break;
                             }
-                            case "You":
+                        case "You":
                             {
                                 Verb = $"{Input}";
                                 break;
                             }
-                            case "He/She/It":
+                        case "He/She/It":
                             {
                                 Verb = $"{Input}s";
                                 break;
                             }
-                            case "We":
+                        case "We":
                             {
                                 Verb = $"{Input}";
                                 break;
                             }
-                            case "They":
+                        case "They":
                             {
                                 Verb = $"{Input}";
                                 break;
                             }
-                        }
-                        Console.Write("Verbwasfound");
-                        break;
                     }
-
-                    txt = "";
+                    break;
+                }
+                else
+                {
+                    Verb = "Incorrect";
                 }
             }
-
-            Verb = "Test";
             return Verb;
         }
     }
 }
+
+//For at skrive i filen:
+/*using (StreamWriter sw =
+                new StreamWriter(path, append: true, System.Text.Encoding.GetEncoding("iso-8859-1")))
+                {
+                sw.WriteLine("Hej");
+                }*/
