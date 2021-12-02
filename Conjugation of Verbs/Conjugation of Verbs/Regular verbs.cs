@@ -14,13 +14,13 @@ namespace Conjugation_of_Verbs
         //Skal den også kunne bøje i dativ?
 
         private string Input;
-        private string Mode; 
+        private string Mode;
         private string Verb;
         private int Time;
         private string txt = "";
+
         public string isRegular(string input, string mode, int time)
         {
-            //using StreamReader
             this.Mode = mode;
             this.Input = input;
             this.Time = time;
@@ -28,11 +28,19 @@ namespace Conjugation_of_Verbs
             //if time == present (dativ)  - converter til dativ - ellers bøj som infinitiv verbum
 
             String path = @"RegularVerbs.txt";
-            using (StreamReader sr = new StreamReader(path, System.Text.Encoding.GetEncoding("iso-8859-1")))
+
+            /*using (StreamWriter sw =
+                new StreamWriter(path, append: true, System.Text.Encoding.GetEncoding("iso-8859-1")))
+                {
+                sw.WriteLine("Hej");
+                }*/
+            
+            for (int i = 0; i <= 50; i++)
             {
-                while (sr.ReadLine() != null)
+                using (StreamReader sr = new StreamReader(path, System.Text.Encoding.GetEncoding("iso-8859-1")))
                 {
                     txt = sr.ReadLine();
+                    
                     if (Verb == txt)
                     {
                         switch (Mode)
@@ -63,12 +71,10 @@ namespace Conjugation_of_Verbs
                                 break;
                             }
                         }
+                        break;
                     }
-                    else
-                    {
-                        txt = "";
-                        Verb = "Incorrect Verb";
-                    }
+
+                    txt = "";
                 }
             }
             return Verb;
