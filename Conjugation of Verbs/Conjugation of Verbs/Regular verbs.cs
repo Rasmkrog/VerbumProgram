@@ -47,36 +47,39 @@ namespace Conjugation_of_Verbs
                         {
                             case "I":
                             {
-                                Verb = $"{input}";
+                                Verb = $"{Input}";
                                 break;
                             }
                             case "You":
                             {
-                                Verb = $"{input}";
+                                Verb = $"{Input}";
                                 break;
                             }
                             case "He/She/It":
                             {
-                                Verb = $"{input}s";
+                                Verb = $"{Input}s";
                                 break;
                             }
                             case "We":
                             {
-                                Verb = $"{input}";
+                                Verb = $"{Input}";
                                 break;
                             }
                             case "They":
                             {
-                                Verb = $"{input}";
+                                Verb = $"{Input}";
                                 break;
                             }
                         }
+                        Console.Write("Verbwasfound");
                         break;
                     }
 
                     txt = "";
                 }
             }
+
+            Verb = "Test";
             return Verb;
         }
     }
