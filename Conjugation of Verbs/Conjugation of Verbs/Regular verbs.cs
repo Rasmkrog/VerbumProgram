@@ -91,7 +91,7 @@ namespace Conjugation_of_Verbs
                 }
                 else
                 {
-                    Verb = "Incorrect";
+                    Verb = "Error";
                     //skriv incorrect verb til errorlist.txt fill
                 }
             }

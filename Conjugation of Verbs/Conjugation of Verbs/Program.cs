@@ -17,7 +17,7 @@ namespace Conjugation_of_Verbs
         private string OutputVerb;
         private int time = 1;
         Regular_verbs Regular = new Regular_verbs();
-
+        Irregular_verbs Irregular = new Irregular_verbs();
         public void Time(int Time)
         {
             this.time = Time;
@@ -25,8 +25,13 @@ namespace Conjugation_of_Verbs
         
         public string Verb(string input, string mode)
         {
-            
-            OutputVerb = Regular.isRegular(input, mode, time);
+            if ((OutputVerb = Irregular.isIrrgular(input, mode, time)) == "Error")
+            {
+                if ((OutputVerb = Regular.isRegular(input, mode, time)) == "Error")
+                {
+                    //call methode wronge verb
+                }
+            }
 
             return $"{OutputVerb}";
 

@@ -23,7 +23,8 @@ namespace Conjugation_of_Verbs
         private string input;
         private string output;
         private string mode;
-
+                    String path1 = @"RegularVerbsInfinitiv.txt"; //infinitiv form
+            String path2 = @"RegularVerbsDativ.txt"; //Dativ form
         Program program = new Program();
 
         public MainWindow()
