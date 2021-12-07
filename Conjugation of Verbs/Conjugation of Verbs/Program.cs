@@ -15,8 +15,13 @@ namespace Conjugation_of_Verbs
         //tænker godt det er muligt at få dativ med.
         
         private string OutputVerb;
-        private int time = 0;
+        private int time = 1;
         Regular_verbs Regular = new Regular_verbs();
+
+        public void Time(int Time)
+        {
+            this.time = Time;
+        }
         
         public string Verb(string input, string mode)
         {

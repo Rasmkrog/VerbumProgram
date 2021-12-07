@@ -30,7 +30,7 @@ namespace Conjugation_of_Verbs
         {
             InitializeComponent();
         }
-        
+
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
             mode = "I";
@@ -40,6 +40,7 @@ namespace Conjugation_of_Verbs
             Outputbox.Text = output;
 
         }
+
         private void Button2_Click(object sender, RoutedEventArgs e)
         {
             mode = "You";
@@ -48,6 +49,7 @@ namespace Conjugation_of_Verbs
 
             Outputbox.Text = output;
         }
+
         private void Button3_Click(object sender, RoutedEventArgs e)
         {
             mode = "He/She/It";
@@ -56,6 +58,7 @@ namespace Conjugation_of_Verbs
 
             Outputbox.Text = output;
         }
+
         private void Button4_Click(object sender, RoutedEventArgs e)
         {
             mode = "We";
@@ -64,6 +67,7 @@ namespace Conjugation_of_Verbs
 
             Outputbox.Text = output;
         }
+
         private void Button5_Click(object sender, RoutedEventArgs e)
         {
             mode = "You";
@@ -72,6 +76,7 @@ namespace Conjugation_of_Verbs
 
             Outputbox.Text = output;
         }
+
         private void Button6_Click(object sender, RoutedEventArgs e)
         {
             mode = "They";
@@ -80,5 +85,18 @@ namespace Conjugation_of_Verbs
 
             Outputbox.Text = output;
         }
+
+
+        private void Infinitiv_Click(object sender, RoutedEventArgs e)
+        {
+            program.Time(0);
+        }
+
+        private void Dativ_Click(object sender, RoutedEventArgs e)
+        {
+            program.Time(1);
+
+        }
+
     }
 }

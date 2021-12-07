@@ -18,74 +18,81 @@ namespace Conjugation_of_Verbs
         private string Verb;
         private int Time;
         private string txt;
-        private string[] VerbsArry;
+        private string[] VerbsArryInfinitiv;
+        private string[] VerbsArryDativ;
+
 
         public string isRegular(string input, string mode, int time)
         {
             this.Mode = mode;
             this.Input = input;
             this.Time = time;
+            
 
             //if time == present (dativ)  - converter til dativ - ellers bøj som infinitiv verbum
 
             String path1 = @"RegularVerbsInfinitiv.txt"; //infinitiv form
             String path2 = @"RegularVerbsDativ.txt"; //Dativ form
 
-
-            if (Time == 1)
+            using (StreamReader sr = new StreamReader(path1, System.Text.Encoding.GetEncoding("iso-8859-1")))
             {
-                using (StreamReader sr = new StreamReader(path2, System.Text.Encoding.GetEncoding("iso-8859-1")))
-                {
-                    txt = sr.ReadLine();
-                    VerbsArry = txt.Split(',');
-                }
+                txt = sr.ReadLine();
+                VerbsArryInfinitiv = txt.Split(',');
             }
-            else
+
+            using (StreamReader sr = new StreamReader(path2, System.Text.Encoding.GetEncoding("iso-8859-1")))
             {
-                using (StreamReader sr = new StreamReader(path1, System.Text.Encoding.GetEncoding("iso-8859-1")))
-                {
-                    txt = sr.ReadLine();
-                    VerbsArry = txt.Split(',');
-                }
+                txt = sr.ReadLine();
+                VerbsArryDativ = txt.Split(',');
             }
             
-            for (int i = 0; i < VerbsArry.Length; i++)
+            
+            for (int i = 0; i < VerbsArryInfinitiv.Length; i++)
             {
-                if (Input == VerbsArry[i])
+                if (Input == VerbsArryInfinitiv[i])
                 {
-                    switch (Mode)
+                    if (Time == 0)
                     {
-                        case "I":
+                        switch (Mode)
+                        {
+                            case "I":
                             {
                                 Verb = $"{Input}";
                                 break;
                             }
-                        case "You":
+                            case "You":
                             {
                                 Verb = $"{Input}";
                                 break;
                             }
-                        case "He/She/It":
+                            case "He/She/It":
                             {
                                 Verb = $"{Input}s";
                                 break;
                             }
-                        case "We":
+                            case "We":
                             {
                                 Verb = $"{Input}";
                                 break;
                             }
-                        case "They":
+                            case "They":
                             {
                                 Verb = $"{Input}";
                                 break;
                             }
+                        }
+                    }
+                    else
+                    {
+                        Input = VerbsArryDativ[i];
+                        Verb = Input;
                     }
                     break;
                 }
                 else
                 {
                     Verb = "Incorrect";
+                    //skriv incorrect verb til errorlist.txt fill
                 }
             }
             return Verb;
