@@ -8,7 +8,7 @@
         
         
 
-        Title="MainWindow" Height="800" Width="600" Background="#004677" WindowStartupLocation="CenterScreen" >
+        Title="MainWindow" Height="800" Width="600" Background="#CF5C36" WindowStartupLocation="CenterScreen" >
     <Grid UseLayoutRounding="True">
         <!--Background="#CF5C36"-->
 
@@ -21,140 +21,155 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="30" />
-            <RowDefinition Height="1*" />
-            <RowDefinition Height="80"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="80" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
-            <RowDefinition Height="30" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+
         </Grid.RowDefinitions>
 
-        <Label Content="Conjugation of Verbs" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Margin="2,2,2,2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="40" FontFamily="Times New Roman" Background="LightBlue">
+        <Label Content="Conjugation of Verbs" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" Margin="2,2,2,2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="50" FontFamily="Times New Roman" Foreground="#EFC88B" FontWeight="Bold">
             <Label.Resources>
                 <Style TargetType="Border" >
                     <Setter Property="CornerRadius" Value="10" />
                 </Style>
             </Label.Resources>
         </Label>
-        
-        <TextBox x:Name="Inputbox" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3" Margin="2,2,2,2" Text="TextBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25" FontFamily="Times New Roman" Background="LightGray">
+
+        <TextBox x:Name="Inputbox" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Margin="10,10,10,20" Text="Input" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25" FontFamily="Times New Roman" Background="White" Foreground="#CF5C36" >
             <TextBox.Resources>
                 <Style TargetType="Border" >
+                    <Setter Property="CornerRadius" Value="20" />
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+
+        <Label Content="---------------- Conjugation ---------------" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3" Margin="2,2,2,2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" FontFamily="Times New Roman" Foreground="White" FontWeight="ExtraBold">
+            <Label.Resources>
+                <Style TargetType="Border" >
                     <Setter Property="CornerRadius" Value="10" />
+                </Style>
+            </Label.Resources>
+        </Label>
+
+
+
+        <Button x:Name="Infinitiv" Grid.Row="3" Grid.Column="1" Content="Present tense" FontSize="25" FontFamily="Times New Roman" Margin="5,20,5,20" Click="Infinitiv_Click" Foreground="#CF5C36" Background="White" >
+            <Button.Resources>
+                <Style TargetType="Border" >
+                    <Setter Property="CornerRadius" Value="10" />
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button x:Name="Dativ" Grid.Row="3" Grid.Column="3" Content="Paste tense" FontSize="25" FontFamily="Times New Roman" Margin="5,20,5,20" Click="Dativ_Click" Foreground="#CF5C36" Background="White" >
+            <Button.Resources>
+                <Style TargetType="Border" >
+                    <Setter Property="CornerRadius" Value="10" />
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Rectangle Grid.Column="1" Grid.Row="4" Grid.RowSpan="4" Fill="#EFC88B" RadiusX="20" RadiusY="20"></Rectangle>
+        <Rectangle Grid.Column="3" Grid.Row="4" Grid.RowSpan="4" Fill="#EFC88B" RadiusX="20" RadiusY="20" ></Rectangle>
+
+        <Label Content="Singular" Grid.Column="1" Grid.Row="4"  Margin="5,20,5,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25" FontFamily="Times New Roman" Foreground="#7C7C7C" FontWeight="Bold">
+            <Label.Resources>
+                <Style TargetType="Border" >
+                    <Setter Property="CornerRadius" Value="10" />
+                </Style>
+            </Label.Resources>
+        </Label>
+
+        <Label Content="Plural" Grid.Column="3" Grid.Row="4" Margin="5,20,5,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25" FontFamily="Times New Roman" Foreground="#7C7C7C" FontWeight="Bold" >
+            <Label.Resources>
+                <Style TargetType="Border" >
+                    <Setter Property="CornerRadius" Value="10" />
+                </Style>
+            </Label.Resources>
+        </Label>
+
+
+
+        <Button x:Name="Button1" Grid.Row="5" Grid.Column="1" Content="I" FontSize="25" FontFamily="Times New Roman" Margin="30,20,30,20" Click="Button1_Click" Foreground="#CF5C36" Background="White">
+            <Button.Resources>
+                <Style TargetType="Border" >
+                    <Setter Property="CornerRadius" Value="20" />
+                </Style>
+            </Button.Resources>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="White" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+
+        <Button x:Name="Button2" Grid.Row="6" Grid.Column="1" Content="You" FontSize="25" FontFamily="Times New Roman" Margin="30,20,30,20" Click="Button2_Click" Foreground="#CF5C36" Background="White">
+            <Button.Resources>
+                <Style TargetType="Border" >
+                    <Setter Property="CornerRadius" Value="20" />
+                </Style>
+            </Button.Resources>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="White" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+
+        <Button x:Name="Button3" Grid.Row="7" Grid.Column="1" Content="He/She/It" FontSize="25" FontFamily="Times New Roman" Margin="30,20,30,20" Click="Button3_Click" Foreground="#CF5C36" Background="White">
+            <Button.Resources>
+                <Style TargetType="Border" >
+                    <Setter Property="CornerRadius" Value="20" />
+                </Style>
+            </Button.Resources>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="White" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+
+        <Button x:Name="Button4" Grid.Row="5" Grid.Column="3" Content="We" FontSize="25" FontFamily="Times New Roman" Margin="30,20,30,20" Click="Button4_Click" Foreground="#CF5C36" Background="White">
+            <Button.Resources>
+                <Style TargetType="Border" >
+                    <Setter Property="CornerRadius" Value="20" />
+                </Style>
+            </Button.Resources>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="White" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+
+        <Button x:Name="Button5" Grid.Row="6" Grid.Column="3" Content="You" FontSize="25" FontFamily="Times New Roman" Margin="30,20,30,20" Click="Button5_Click" Foreground="#CF5C36" Background="White">
+            <Button.Resources>
+                <Style TargetType="Border" >
+                    <Setter Property="CornerRadius" Value="20" />
+                </Style>
+            </Button.Resources>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="White" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+
+        <Button x:Name="Button6" Grid.Row="7" Grid.Column="3" Content="They" FontSize="25" FontFamily="Times New Roman" Margin="30,20,30,20" Click="Button6_Click" Foreground="#CF5C36" Background="White" >
+            <Button.Resources>
+                <Style TargetType="Border" >
+                    <Setter Property="CornerRadius" Value="20" />
+                </Style>
+            </Button.Resources>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="White" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+
+        <TextBox x:Name="Outputbox" Grid.Column="1" Grid.Row="9" Grid.ColumnSpan="3" Margin="0,20,0,20" Text="TextBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25" FontFamily="Times New Roman" Background="White" Foreground="#CF5C36" Opacity="100">
+            <TextBox.Resources>
+                <Style TargetType="Border" >
+                    <Setter Property="CornerRadius" Value="20" />
                 </Style>
             </TextBox.Resources>
         </TextBox>
 
 
-        <Label Content="Singular" Grid.Column="1" Grid.Row="4"  Margin="5,5,5,5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="40" FontFamily="Times New Roman" Background="LightBlue" >
-            <Label.Resources>
-                <Style TargetType="Border" >
-                    <Setter Property="CornerRadius" Value="10" />
-                </Style>
-            </Label.Resources>
-        </Label>
-
-        <Label Content="Plural" Grid.Column="3" Grid.Row="4" Margin="5,5,5,5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="40" FontFamily="Times New Roman" Background="LightBlue" >
-            <Label.Resources>
-                <Style TargetType="Border" >
-                    <Setter Property="CornerRadius" Value="10" />
-                </Style>
-            </Label.Resources>
-        </Label>
-
-        <!--<Button Margin="10,10,195,71" Grid.ColumnSpan="2" Grid.RowSpan="2">
-            <Button.Resources>
-                <Style TargetType="Border" >
-                    <Setter Property="CornerRadius" Value="10" />
-
-                </Style>
-            </Button.Resources>
-        </Button>-->
-
-
-
-        <Button x:Name="Button1" Grid.Row="5" Grid.Column="1" Content="I" FontSize="35" FontFamily="Times New Roman" Margin="5,5,5,5" Click="Button1_Click" Background="#EEE5E9">
-            <Button.Resources>
-                <Style TargetType="Border" >
-                    <Setter Property="CornerRadius" Value="10" />
-                </Style>
-            </Button.Resources>
-        </Button>
-
-        <Button x:Name="Button2" Grid.Row="6" Grid.Column="1" Content="You" FontSize="35" FontFamily="Times New Roman" Margin="5,5,5,5" Click="Button2_Click" Background="#EEE5E9">
-            <Button.Resources>
-                <Style TargetType="Border" >
-                    <Setter Property="CornerRadius" Value="10" />
-                </Style>
-            </Button.Resources>
-        </Button>
-
-        <Button x:Name="Button3" Grid.Row="7" Grid.Column="1" Content="He/She/It" FontSize="35" FontFamily="Times New Roman" Margin="5,5,5,5" Click="Button3_Click" Background="#EEE5E9">
-            <Button.Resources>
-                <Style TargetType="Border" >
-                    <Setter Property="CornerRadius" Value="10" />
-                </Style>
-            </Button.Resources>
-        </Button>
-
-        <Button x:Name="Button4" Grid.Row="5" Grid.Column="3" Content="We" FontSize="35" FontFamily="Times New Roman" Margin="5,5,5,5" Click="Button4_Click" Background="#EEE5E9">
-            <Button.Resources>
-                <Style TargetType="Border" >
-                    <Setter Property="CornerRadius" Value="10" />
-                </Style>
-            </Button.Resources>
-        </Button>
-
-        <Button x:Name="Button5" Grid.Row="6" Grid.Column="3" Content="You" FontSize="35" FontFamily="Times New Roman" Margin="5,5,5,5" Click="Button5_Click" Background="#EEE5E9">
-            <Button.Resources>
-                <Style TargetType="Border" >
-                    <Setter Property="CornerRadius" Value="10" />
-                </Style>
-            </Button.Resources>
-        </Button>
-
-        <Button x:Name="Button6" Grid.Row="7" Grid.Column="3" Content="They" FontSize="35" FontFamily="Times New Roman" Margin="5,5,5,5" Click="Button6_Click" Background="#EEE5E9" >
-            <Button.Resources>
-                <Style TargetType="Border" >
-                    <Setter Property="CornerRadius" Value="10" />
-                </Style>
-            </Button.Resources>
-        </Button>
-
-        <Label Content="Inflected verb" Grid.Column="1" Grid.Row="8" Grid.ColumnSpan="3" Margin="5,5,5,5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="40" FontFamily="Times New Roman" Background="LightBlue">
-            <Label.Resources>
-                <Style TargetType="Border" >
-                    <Setter Property="CornerRadius" Value="10" />
-                </Style>
-            </Label.Resources>
-            
-        </Label>
-        <TextBox x:Name="Outputbox" Grid.Column="1" Grid.Row="9" Grid.ColumnSpan="3" Margin="20,20,20,20" Text="TextBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25" FontFamily="Times New Roman" Background="LightGray" IsEnabled="False">
-            <TextBox.Resources>
-                <Style TargetType="Border" >
-                    <Setter Property="CornerRadius" Value="10" />
-                </Style>
-            </TextBox.Resources>
-        </TextBox>
-        <Button x:Name="Infinitiv" Grid.Row="3" Grid.Column="1" Content="Infinitiv" FontSize="35" FontFamily="Times New Roman" Margin="5,5,5,5" Click="Infinitiv_Click" >
-            <Button.Resources>
-                <Style TargetType="Border" >
-                    <Setter Property="CornerRadius" Value="10" />
-                </Style>
-            </Button.Resources>
-        </Button>
-
-        <Button x:Name="Dativ" Grid.Row="3" Grid.Column="3" Content="Dativ" FontSize="35" FontFamily="Times New Roman" Margin="5,5,5,5" Click="Dativ_Click" >
-            <Button.Resources>
-                <Style TargetType="Border" >
-                    <Setter Property="CornerRadius" Value="10" />
-                </Style>
-            </Button.Resources>
-        </Button>
     </Grid>
 </Window>
