@@ -25,14 +25,17 @@ namespace Conjugation_of_Verbs
         
         public string Verb(string input, string mode)
         {
-            if ((OutputVerb = Irregular.isIrrgular(input, mode, time)) == "Error")
+            OutputVerb = Irregular.isIrrgular(input, mode, time);
+            if (OutputVerb == "Error")
             {
-                if ((OutputVerb = Regular.isRegular(input, mode, time)) == "Error")
+                OutputVerb = Regular.isRegular(input, mode, time);
+                if (OutputVerb == "Error")
                 {
-                    //call methode wronge verb
+                    //write input til error fill
                 }
             }
 
+            
             return $"{OutputVerb}";
 
         }

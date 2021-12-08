@@ -6,6 +6,7 @@ using System.Printing;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Globalization;
 
 namespace Conjugation_of_Verbs
 {
@@ -17,6 +18,7 @@ namespace Conjugation_of_Verbs
         private string[] VerbsArryPast;
         String path1 = @"IregularVerbsInfinitiv.txt"; //infinitiv form
         String path2 = @"IregularVerbsImperfektum.txt"; //Dativ form
+        private TextInfo myTI = new CultureInfo("en-us", false).TextInfo;
         public string isIrrgular(string input, string mode, int Time)
         {
             using (StreamReader sr = new StreamReader(path1, System.Text.Encoding.GetEncoding("iso-8859-1")))
@@ -34,18 +36,18 @@ namespace Conjugation_of_Verbs
             
             for (int i = 0; i < VerbsArryInfinitiv.Length; i++)
             {
-                if (input == VerbsArryInfinitiv[i])
+                if (myTI.ToTitleCase(input) == VerbsArryInfinitiv[i])
                 {
                     if (Time == 0)
                     {
                         output = VerbsArryInfinitiv[i];
-                        break;
                     }
                     else
                     {
                         output = VerbsArryPast[i];
-                        break;
+                        
                     }
+                    break;
                 }
                 else
                 {
