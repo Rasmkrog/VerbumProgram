@@ -30,6 +30,7 @@ namespace Conjugation_of_Verbs
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void Button1_Click(object sender, RoutedEventArgs e)
