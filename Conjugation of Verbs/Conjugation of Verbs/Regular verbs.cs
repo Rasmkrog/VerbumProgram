@@ -29,8 +29,6 @@ namespace Conjugation_of_Verbs
             this.Time = time;
             
 
-            //if time == present (dativ)  - converter til dativ - ellers bøj som infinitiv verbum
-
             String path1 = @"RegularVerbsInfinitiv.txt"; //infinitiv form
             String path2 = @"RegularVerbsDativ.txt"; //Dativ form
 
@@ -49,50 +47,32 @@ namespace Conjugation_of_Verbs
             
             for (int i = 0; i < VerbsArryInfinitiv.Length; i++)
             {
-                if (Input == VerbsArryInfinitiv[i])
+                if (Input == VerbsArryInfinitiv[i].ToLower())
                 {
                     if (Time == 0)
                     {
-                        switch (Mode)
+                        if (Mode == "He/She/It")
                         {
-                            case "I":
-                            {
-                                Verb = $"{Input}";
-                                break;
-                            }
-                            case "You":
-                            {
-                                Verb = $"{Input}";
-                                break;
-                            }
-                            case "He/She/It":
-                            {
-                                Verb = $"{Input}s";
-                                break;
-                            }
-                            case "We":
-                            {
-                                Verb = $"{Input}";
-                                break;
-                            }
-                            case "They":
-                            {
-                                Verb = $"{Input}";
-                                break;
-                            }
+                            Verb = $"{Input}s";
+                            
                         }
+                        else
+                        {
+                            Verb = Input;
+                            
+                        }
+                        break;
                     }
                     else
                     {
-                        Input = VerbsArryDativ[i];
-                        Verb = Input;
+                        Verb = VerbsArryDativ[i];
+                        
                     }
                     break;
                 }
                 else
                 {
                     Verb = "Error";
-                    //skriv incorrect verb til errorlist.txt fill
                 }
             }
             return Verb;
@@ -102,7 +82,7 @@ namespace Conjugation_of_Verbs
 
 //For at skrive i filen:
 /*using (StreamWriter sw =
-                new StreamWriter(path, append: true, System.Text.Encoding.GetEncoding("iso-8859-1")))
-                {
-                sw.WriteLine("Hej");
-                }*/
+new StreamWriter(path, append: true, System.Text.Encoding.GetEncoding("iso-8859-1")))
+{
+sw.WriteLine("Hej");
+}*/

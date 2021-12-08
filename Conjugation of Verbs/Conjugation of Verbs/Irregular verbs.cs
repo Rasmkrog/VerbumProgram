@@ -6,56 +6,54 @@ using System.Printing;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Globalization;
 
 namespace Conjugation_of_Verbs
 {
     class Irregular_verbs
     {
-        private string output;
+        private string Verb;
         private string txt;
-        private string[] VerbsArryInfinitiv;
-        private string[] VerbsArryPast;
+        private string[] IregularVerbsArryInfinitiv;
+        private string[] IregularVerbsArryPast;
         String path1 = @"IregularVerbsInfinitiv.txt"; //infinitiv form
         String path2 = @"IregularVerbsImperfektum.txt"; //Dativ form
-        private TextInfo myTI = new CultureInfo("en-us", false).TextInfo;
         public string isIrrgular(string input, string mode, int Time)
         {
             using (StreamReader sr = new StreamReader(path1, System.Text.Encoding.GetEncoding("iso-8859-1")))
             {
                 txt = sr.ReadLine();
-                VerbsArryInfinitiv = txt.Split(',');
+                IregularVerbsArryInfinitiv = txt.Split(',');
             }
 
             using (StreamReader sr = new StreamReader(path2, System.Text.Encoding.GetEncoding("iso-8859-1")))
             {
                 txt = sr.ReadLine();
-                VerbsArryPast = txt.Split(',');
+                IregularVerbsArryPast = txt.Split(',');
             }
 
             
-            for (int i = 0; i < VerbsArryInfinitiv.Length; i++)
+            for (int i = 0; i < IregularVerbsArryInfinitiv.Length; i++)
             {
-                if (myTI.ToTitleCase(input) == VerbsArryInfinitiv[i])
+                if (input == IregularVerbsArryInfinitiv[i].ToLower())
                 {
                     if (Time == 0)
                     {
-                        output = VerbsArryInfinitiv[i];
+                        Verb = IregularVerbsArryInfinitiv[i];
                     }
                     else
                     {
-                        output = VerbsArryPast[i];
+                        Verb = IregularVerbsArryPast[i];
                         
                     }
                     break;
                 }
                 else
                 {
-                    output = "Error";
+                    Verb = "Error";
                 }
             }
             
-            return output;
+            return Verb;
         }
 
 
