@@ -31,6 +31,7 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
 
+
         </Grid.RowDefinitions>
 
         <Label Content="Conjugation of Verbs" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" Margin="2,2,2,2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="50" FontFamily="Times New Roman" Foreground="#EFC88B" FontWeight="Bold">
@@ -41,7 +42,7 @@
             </Label.Resources>
         </Label>
 
-        <TextBox x:Name="Inputbox" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Margin="10,10,10,20" Text="Input" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25" FontFamily="Times New Roman" Background="White" Foreground="#CF5C36" >
+        <TextBox x:Name="Inputbox" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Margin="10,10,10,20" Text="Input" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25" FontFamily="Times New Roman" Background="#EEE5E9" Foreground="#CF5C36" >
             <TextBox.Resources>
                 <Style TargetType="Border" >
                     <Setter Property="CornerRadius" Value="20" />
@@ -49,7 +50,7 @@
             </TextBox.Resources>
         </TextBox>
 
-        <Label Content="---------------- Conjugation ---------------" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3" Margin="2,2,2,2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" FontFamily="Times New Roman" Foreground="White" FontWeight="ExtraBold">
+        <Label Content="---------------- Conjugation ---------------" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3" Margin="2,2,2,2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" FontFamily="Times New Roman" Foreground="#EEE5E9" FontWeight="ExtraBold">
             <Label.Resources>
                 <Style TargetType="Border" >
                     <Setter Property="CornerRadius" Value="10" />
@@ -59,7 +60,7 @@
 
 
 
-        <Button x:Name="Infinitiv" Grid.Row="3" Grid.Column="1" Content="Present tense" FontSize="25" FontFamily="Times New Roman" Margin="5,20,5,20" Click="Infinitiv_Click" Foreground="#CF5C36" Background="White" >
+        <Button x:Name="Infinitiv" Grid.Row="3" Grid.Column="1" Content="Present tense" FontSize="25" FontFamily="Times New Roman" Margin="5,20,5,20" Click="Infinitiv_Click" Foreground="#CF5C36" Background="#EEE5E9" >
             <Button.Resources>
                 <Style TargetType="Border" >
                     <Setter Property="CornerRadius" Value="10" />
@@ -67,7 +68,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="Dativ" Grid.Row="3" Grid.Column="3" Content="Paste tense" FontSize="25" FontFamily="Times New Roman" Margin="5,20,5,20" Click="Dativ_Click" Foreground="#CF5C36" Background="White" >
+        <Button x:Name="Dativ" Grid.Row="3" Grid.Column="3" Content="Paste tense" FontSize="25" FontFamily="Times New Roman" Margin="5,20,5,20" Click="Dativ_Click" Foreground="#CF5C36" Background="#EEE5E9" >
             <Button.Resources>
                 <Style TargetType="Border" >
                     <Setter Property="CornerRadius" Value="10" />
@@ -96,7 +97,7 @@
 
 
 
-        <Button x:Name="Button1" Grid.Row="5" Grid.Column="1" Content="I" FontSize="25" FontFamily="Times New Roman" Margin="30,20,30,20" Click="Button1_Click" Foreground="#CF5C36" Background="White">
+        <Button x:Name="Button1" Grid.Row="5" Grid.Column="1" Content="I" FontSize="25" FontFamily="Times New Roman" Margin="30,20,30,20" Click="Button1_Click" Foreground="#CF5C36" Background="#EEE5E9">
             <Button.Resources>
                 <Style TargetType="Border" >
                     <Setter Property="CornerRadius" Value="20" />
@@ -107,7 +108,7 @@
             </Button.BorderBrush>
         </Button>
 
-        <Button x:Name="Button2" Grid.Row="6" Grid.Column="1" Content="You" FontSize="25" FontFamily="Times New Roman" Margin="30,20,30,20" Click="Button2_Click" Foreground="#CF5C36" Background="White">
+        <Button x:Name="Button2" Grid.Row="6" Grid.Column="1" Content="You" FontSize="25" FontFamily="Times New Roman" Margin="30,20,30,20" Click="Button2_Click" Foreground="#CF5C36" Background="#EEE5E9">
             <Button.Resources>
                 <Style TargetType="Border" >
                     <Setter Property="CornerRadius" Value="20" />
@@ -118,7 +119,7 @@
             </Button.BorderBrush>
         </Button>
 
-        <Button x:Name="Button3" Grid.Row="7" Grid.Column="1" Content="He/She/It" FontSize="25" FontFamily="Times New Roman" Margin="30,20,30,20" Click="Button3_Click" Foreground="#CF5C36" Background="White">
+        <Button x:Name="Button3" Grid.Row="7" Grid.Column="1" Content="He/She/It" FontSize="25" FontFamily="Times New Roman" Margin="30,20,30,20" Click="Button3_Click" Foreground="#CF5C36" Background="#EEE5E9">
             <Button.Resources>
                 <Style TargetType="Border" >
                     <Setter Property="CornerRadius" Value="20" />
@@ -129,7 +130,7 @@
             </Button.BorderBrush>
         </Button>
 
-        <Button x:Name="Button4" Grid.Row="5" Grid.Column="3" Content="We" FontSize="25" FontFamily="Times New Roman" Margin="30,20,30,20" Click="Button4_Click" Foreground="#CF5C36" Background="White">
+        <Button x:Name="Button4" Grid.Row="5" Grid.Column="3" Content="We" FontSize="25" FontFamily="Times New Roman" Margin="30,20,30,20" Click="Button4_Click" Foreground="#CF5C36" Background="#EEE5E9">
             <Button.Resources>
                 <Style TargetType="Border" >
                     <Setter Property="CornerRadius" Value="20" />
@@ -140,7 +141,7 @@
             </Button.BorderBrush>
         </Button>
 
-        <Button x:Name="Button5" Grid.Row="6" Grid.Column="3" Content="You" FontSize="25" FontFamily="Times New Roman" Margin="30,20,30,20" Click="Button5_Click" Foreground="#CF5C36" Background="White">
+        <Button x:Name="Button5" Grid.Row="6" Grid.Column="3" Content="You" FontSize="25" FontFamily="Times New Roman" Margin="30,20,30,20" Click="Button5_Click" Foreground="#CF5C36" Background="#EEE5E9">
             <Button.Resources>
                 <Style TargetType="Border" >
                     <Setter Property="CornerRadius" Value="20" />
@@ -151,7 +152,7 @@
             </Button.BorderBrush>
         </Button>
 
-        <Button x:Name="Button6" Grid.Row="7" Grid.Column="3" Content="They" FontSize="25" FontFamily="Times New Roman" Margin="30,20,30,20" Click="Button6_Click" Foreground="#CF5C36" Background="White" >
+        <Button x:Name="Button6" Grid.Row="7" Grid.Column="3" Content="They" FontSize="25" FontFamily="Times New Roman" Margin="30,20,30,20" Click="Button6_Click" Foreground="#CF5C36" Background="#EEE5E9" >
             <Button.Resources>
                 <Style TargetType="Border" >
                     <Setter Property="CornerRadius" Value="20" />
@@ -162,7 +163,7 @@
             </Button.BorderBrush>
         </Button>
 
-        <TextBox x:Name="Outputbox" Grid.Column="1" Grid.Row="9" Grid.ColumnSpan="3" Margin="0,20,0,20" Text="TextBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25" FontFamily="Times New Roman" Background="White" Foreground="#CF5C36" Opacity="100">
+        <TextBox x:Name="Outputbox" Grid.Column="1" Grid.Row="9" Grid.ColumnSpan="3" Margin="0,20,0,20" Text="TextBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25" FontFamily="Times New Roman" Background="#EEE5E9" Foreground="#CF5C36" Opacity="100">
             <TextBox.Resources>
                 <Style TargetType="Border" >
                     <Setter Property="CornerRadius" Value="20" />
