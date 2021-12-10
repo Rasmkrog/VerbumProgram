@@ -52,11 +52,7 @@ namespace Conjugation_of_Verbs
                     Verb = "Error";
                 }
             }
-            
             return Verb;
         }
-
-
-
     }
 }

@@ -9,10 +9,7 @@ namespace Conjugation_of_Verbs
 {
     class Regular_verbs
     {
-        //Hvis Input ikke findes i "Irregular_verbs" skal koden her køres for at få det bøjet.
-        //kan indtil vidre bøje i present/infinitiv form.
-        //Skal den også kunne bøje i dativ?
-
+        
         private string Input;
         private string Mode;
         private string Verb;
@@ -79,10 +76,3 @@ namespace Conjugation_of_Verbs
         }
     }
 }
-
-//For at skrive i filen:
-/*using (StreamWriter sw =
-new StreamWriter(path, append: true, System.Text.Encoding.GetEncoding("iso-8859-1")))
-{
-sw.WriteLine("Hej");
-}*/
