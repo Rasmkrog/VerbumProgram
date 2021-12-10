@@ -181,6 +181,9 @@
                     <Setter Property="CornerRadius" Value="20" />
                 </Style>
             </TextBox.Resources>
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="White" Opacity="0"/>
+            </TextBox.BorderBrush>
         </TextBox>
 
 
